@@ -71,8 +71,7 @@ public interface WorldManager {
      * Creates a new {@link WorldProperties} from the given
      * {@link WorldArchetype}. For the creation of the {@link WorldArchetype} please see {@link WorldArchetype.Builder}.
      *
-     * <p>It is up to the implementation to define an {@link Optional#empty()} result. In vanilla Minecraft, this would happen if the directory
-     * already exists in the default world container or an IO error occurred when loading.</p>
+     * <p>It is up to the implementation to define an {@link Optional#empty()} result.</p>
      *
      * <p>The returned properties should be considered "virtual" as it will not exist on the disk nor will the manager consider it "offline data".
      *
